@@ -9,12 +9,17 @@ export default function Tab() {
       <Text>
         <Text style={{ fontWeight: 'bold' }}>Username</Text>
       </Text>
-      <TextInput style={styles.input} placeholder="Enter text" />
+      <TextInput style={styles.input} placeholder="Enter text" maxLength={50} />
 
       <Text>
         <Text style={{ fontWeight: 'bold' }}>Password</Text>
       </Text>
-      <TextInput style={styles.input} placeholder="Enter text" />
+      <TextInput
+  style={styles.input} 
+  placeholder="Enter password" 
+  secureTextEntry={true} 
+  maxLength={20} // This limits the input to 20 characters
+/>
 
       {/* TouchableOpacity with custom width */}
       <TouchableOpacity style={styles.button} onPress={() => {}}>
